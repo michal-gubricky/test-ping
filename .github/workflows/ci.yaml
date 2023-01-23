@@ -1,8 +1,9 @@
 name: Lint and Test Chart
 
 on:
-  pull_request:
-    # Only if there are chart changes to test.
+  push:
+    branches:
+    - main
     paths:
     - 'chart/**'
 
